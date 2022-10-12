@@ -28,27 +28,26 @@
  #tipo texto a un dato de tipo numerico real o entero
  # input es un metodo de python que pide un dato
  #por consola al usuario
-# condicion=True
-# while condicion==True:
-#   numero=int(input("ingresa el numero ganador:"))
-#   if numero==10:
-#     print("ganaste el premio")
-#     condicion=False
-#   else:
-#     print("ese no es el numero")
+#condicion=True
+#while condicion==True:
+   #numero=int(input("ingresa el numero ganador:"))
+   #if numero==10:
+     #print("ganaste el premio")
+     #condiciones=False
+  # else:
+    #print("ese no es el numero")
 
 ##crear un programa que me pida mi edad
 #si engreso una edad incorrecta el programa
 #seguira pidiendo mi edad
 ##si es la edad corrceta me mostrara un mensaje de correcto
 #y se terminara la ejecucion
-
 condicion=True
-while condicion== True:
-   edad=int(input("ingresa la edad:"))
-if edad==20:
-    print("la edad es corecta")
-    condicion==false
-else:
-    print("la edad es incorecto")
+while condicion==True:
+   EDAD=int(input("ingresa su edad:"))
+   if EDAD==20:
+     print("tu edad es correcta")
+     condiciones=False
+   else:
+    print("ese no es tu edad")
 

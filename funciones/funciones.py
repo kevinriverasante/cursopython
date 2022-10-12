@@ -2,7 +2,7 @@
 #líneas de código que realizan una tarea específica y pueden tomar
 #“Argumentos” para diferentes “Parámetros” que modifiquen su funcionamiento y los datos de salida. 
 def multiplica_por_7(numero):
-    print(f'{numero}*7 = {numero * 7}')
+    print(f'{numero}+7 = {numero + 7}')
 print("comienzo del programa ")
 multiplica_por_7(7)
 print("seguiente")
