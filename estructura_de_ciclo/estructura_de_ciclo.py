@@ -42,12 +42,35 @@
 #seguira pidiendo mi edad
 ##si es la edad corrceta me mostrara un mensaje de correcto
 #y se terminara la ejecucion
+# condicion=True
+# while condicion==True:
+#    EDAD=int(input("ingresa su edad:"))
+#    if EDAD==20:
+#      print("tu edad es correcta")
+#      condiciones=False
+#    else:
+#     print("ese no es tu edad")
+##for
+password="71644288"
+for intentos in range(1,4):
+    print("este es tu",intentos,"intento")
+    newpassword=input("ingresa el password correcto:")
+    if newpassword==password:
+        print("bienvenido joven")
+        break
+    else:
+        print("contraseña incorrecta sigue intentando")
+password="71644288"
 condicion=True
+intentos=1
+##while
 while condicion==True:
-   EDAD=int(input("ingresa su edad:"))
-   if EDAD==20:
-     print("tu edad es correcta")
-     condiciones=False
-   else:
-    print("ese no es tu edad")
+    print("este es tu",intentos,"intentos")
+    newpassword=input("ingresa el password correcto:")
+    if newpassword==password:
+        print("bienvenido al sistema joven")
+        condicion=False
+    else:
+        print("eres un gil")
+        intentos+=1
 
