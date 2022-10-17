@@ -51,26 +51,37 @@
 #    else:
 #     print("ese no es tu edad")
 ##for
-password="71644288"
-for intentos in range(1,4):
-    print("este es tu",intentos,"intento")
-    newpassword=input("ingresa el password correcto:")
-    if newpassword==password:
-        print("bienvenido joven")
-        break
-    else:
-        print("contraseña incorrecta sigue intentando")
-password="71644288"
+
+# password="71644288"
+# for intentos in range(1,4):
+#     print("este es tu",intentos,"intento")
+#     newpassword=input("ingresa el password correcto:")
+#     if newpassword==password:
+#         print("bienvenido joven")
+#         break
+#     else:
+#         print("contraseña incorrecta sigue intentando")
+# password="71644288"
+# condicion=True
+# intentos=1
+
+# ##while
+# while condicion==True:
+#     print("este es tu",intentos,"intentos")
+#     newpassword=input("ingresa el password correcto:")
+#     if newpassword==password:
+#         print("bienvenido al sistema joven")
+#         condicion=False
+#     else:
+#         print("eres un gil")
+#         intentos+=1
+
 condicion=True
-intentos=1
-##while
+eval=1
 while condicion==True:
-    print("este es tu",intentos,"intentos")
-    newpassword=input("ingresa el password correcto:")
-    if newpassword==password:
-        print("bienvenido al sistema joven")
+    if eval==5:
+        print("estamos en 5")
         condicion=False
     else:
-        print("eres un gil")
-        intentos+=1
+        eval+=1
 
