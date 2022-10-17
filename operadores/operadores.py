@@ -6,7 +6,11 @@
  # *(multiplicacion) area=base*altura
  # /(division) promedio=sumadenotas/cantidaddenotas
  # % ó MOD(modulo(resto de la division entera)) resto<-num MOD diversos
-
+ #[:] operador foca
+#  texto="el claudio es muy bullero y no va ir cantar"
+#  print(texto[3:])
+texto="hola mundo"
+print(texto[:4])
  # 2:RELACIONALES
  # == (compara los valores si son iguales) 5==2 
                                         #false
