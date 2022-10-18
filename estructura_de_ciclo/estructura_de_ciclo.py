@@ -76,12 +76,56 @@
 #         print("eres un gil")
 #         intentos+=1
 
-condicion=True
-eval=1
-while condicion==True:
-    if eval==5:
-        print("estamos en 5")
-        condicion=False
-    else:
-        eval+=1
+# condicion=True
+# eval=1
+# while condicion==True:
+#     if eval==5:
+#         print("estamos en 5")
+#         condicion=False
+#     else:
+#         eval+=1
+# ##tabla de multiplicar con for
+# for numeros in range(1,11):
+#     print(numeros,'*',2,'=',numeros*2)
+# ##tabla del numero que quieres
+# numero=int(input("ingrese el numero de la tabla que desee mostrar:"))
+# for numeros in range(1,11):
+#     print(numeros,'*',numero,'=',numeros*numero)
+# ##que siga pediendo la tabla
+# eval=True
+# while eval==True:
+#     numero = int(input("ingrese el numero de la tabla que desee mostrar:"))
+#     if numero==0:
+#         print("error saliendo del programa....")
+#         break
+#     else:
+#         for numeros in range(1, 11):
+#             print(numeros, '*', numero, '=', numeros * numero)
+
+##
+# if numero==0:
+#     for numeros in range(1, 11):
+#         print(numeros, '*', numero, '=', numeros * numero)
+# else:
+#     print("error saliendo del programa....")
+#     break
+
+##
+##mensaje="hola"
+##print(mensaje[3])
+##for letra in mensaje:
+    ##print(letra)
+
+##mostrar por consola cuantas vocales a
+##tiene el mensaje
+
+mensaje=input("ingresa un mensaje:")
+contador=0
+for letra in mensaje:
+    if letra=="a":
+        contador+=1
+print("en este mensaje tienes",contador,"letras a")
+
+
+
 
