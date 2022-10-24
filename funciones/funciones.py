@@ -29,8 +29,28 @@
 ##todo lo que se ingrese en input sera tomado como texto
 
 ##funciones creadas
-def saludo(a,b):
-    resultado=a+b
-    return resultado
+
+# def saludo(a,b):
+#     resultado=a+b
+#     return resultado
 ##uso de funcion
-print(saludo(3,6))
+# print(saludo(3,6))
+
+numero="10" ##10
+int(numero)##10
+##int es el nombre de la funcion
+##() y dentro de parentesis van los parametros
+sentence=input("ingrese una oracion: ")
+def countvocals(texto):
+    vocales=["A","e","i","o","u"]
+    contadorvocales=0
+    for letras in texto:
+        if letras in vocales:
+            contadorvocales+=1
+    return contadorvocales
+print("la cantidad de vocales es:",countvocals(sentence))
+
+##crear un afuncion de operaciones matematicas
+##operadormatematico(numerouno,numerodos.numerodos,operacion)
+##operadormatematico(4,5,"entre")
+##por consola la suma de 4/5

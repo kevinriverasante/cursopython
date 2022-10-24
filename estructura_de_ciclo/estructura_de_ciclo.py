@@ -119,16 +119,63 @@
 ##mostrar por consola cuantas vocales a
 ##tiene el mensaje
 
-mensaje=input("ingresa un mensaje:")
-contador=0
-for letra in mensaje:
-    if letra=="a":
-        contador+=1
-print("en este mensaje tienes",contador,"letras a")
+# mensaje=input("ingresa un mensaje:")
+# contador=0
+# for letra in mensaje:
+#     if letra=="a":
+#         contador+=1
+# print("en este mensaje tienes",contador,"letras a")
 
+##escribir un progrma que muestre el eco de
+#todo lo qe el usuario intruduzca hasta que el usuario escriba "salir"
+#que terminara
 
+# while True:
+#     mensaje = input("Escriba el eco: ")
+#     if mensaje == "salir":
+#         break
+#     print(mensaje)
+#de otra forma
 
+# palabra=""
+# while palabra!="salir":
+#     palabra=input("escribe algo: ")
+#     print(palabra)
+##utelizando for
+# contador=10
+# for num in range(0,contador):
+#     palabra=input("ingresa algo: " )
+#     if palabra=="salir":
+#         break
+#     contador+=1
 
+##vocales en una oracion
+oracion=input("ingrese su oracion")
+vocales=["a","e","i","o","u"]
+contadorvocales=0
+for letras in oracion:
+    if letras in vocales:
+        contadorvocales+=1
+print("la cntidad de vocales es:",contadorvocales)
+
+##
+
+sentence=input("ingrese una oracion: ")
+handlervocals=0
+for words in sentence:
+    match words:
+        case "a":
+            handlervocals+=1
+        case "e":
+            handlervocals+=1
+        case "i":
+            handlervocals+=1
+        case "o":
+            handlervocals+=1
+        case "u":
+            handlervocals+=1
+print("la cantidad de vocales es:",handlervocals)
+##
 
 
 
