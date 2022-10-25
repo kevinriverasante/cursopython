@@ -36,21 +36,54 @@
 ##uso de funcion
 # print(saludo(3,6))
 
-numero="10" ##10
-int(numero)##10
+# numero="10" ##10
+# int(numero)##10
 ##int es el nombre de la funcion
 ##() y dentro de parentesis van los parametros
-sentence=input("ingrese una oracion: ")
-def countvocals(texto):
-    vocales=["A","e","i","o","u"]
-    contadorvocales=0
-    for letras in texto:
-        if letras in vocales:
-            contadorvocales+=1
-    return contadorvocales
-print("la cantidad de vocales es:",countvocals(sentence))
+
+# sentence=input("ingrese una oracion: ")
+# def countvocals(texto):
+#     vocales=["A","e","i","o","u"]
+#     contadorvocales=0
+#     for letras in texto:
+#         if letras in vocales:
+#             contadorvocales+=1
+#     return contadorvocales
+# print("la cantidad de vocales es:",countvocals(sentence))
 
 ##crear un afuncion de operaciones matematicas
 ##operadormatematico(numerouno,numerodos.numerodos,operacion)
 ##operadormatematico(4,5,"entre")
 ##por consola la suma de 4/5
+
+def operaciones(num1,num2,operacion):
+    if operacion=="suma":
+        operaciones="la suma de: ",num1,"+",num2, "es ",num1+num2
+    elif operacion=="resta":
+        operaciones="la resta de: ",num1,"-",num2, " es ",num1-num2
+    elif operacion=="multiplicacion":
+        operaciones="la multiplicacion de: ", num1, "*", num2, "es", num1*num2
+    elif operacion=="divicion":
+        operaciones="la divicion de: ", num1, "/", num2, "es", num1/num2
+    return operaciones
+print(operaciones(10,5,"divicion"))
+
+
+# def mensaje(nombre,apellido,accion):
+#     if accion== "saludo":
+#         mensaje="hola",nombre,apellido,"como estas"
+#     elif accion == "despedida":
+#         mensaje="adios",nombre,apellido
+#     return mensaje
+# print(mensaje("jose","alvarez","saludo"))
+
+##vocales en una oracion
+sentence=input("enter sentence: ")
+vocales=["a","e","i","o","o"]
+def countvocal(oracion,vocal):
+    contador=0
+    for word in oracion:
+        if word in vocal:
+            contador+=1
+    return contador
+print(countvocal(sentence,vocales))
