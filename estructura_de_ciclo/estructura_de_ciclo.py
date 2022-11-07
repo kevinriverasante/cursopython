@@ -150,32 +150,111 @@
 #     contador+=1
 
 ##vocales en una oracion
-oracion=input("ingrese su oracion")
-vocales=["a","e","i","o","u"]
-contadorvocales=0
-for letras in oracion:
-    if letras in vocales:
-        contadorvocales+=1
-print("la cntidad de vocales es:",contadorvocales)
+#oracion=input("ingrese su oracion")
+#vocales=["a","e","i","o","u"]
+#contadorvocales=0
+#for letras in oracion:
+ #   if letras in vocales:
+  #      contadorvocales+=1
+#print("la cntidad de vocales es:",contadorvocales)
 
 ##
 
-sentence=input("ingrese una oracion: ")
-handlervocals=0
-for words in sentence:
-    match words:
-        case "a":
-            handlervocals+=1
-        case "e":
-            handlervocals+=1
-        case "i":
-            handlervocals+=1
-        case "o":
-            handlervocals+=1
-        case "u":
-            handlervocals+=1
-print("la cantidad de vocales es:",handlervocals)
+# sentence=input("ingrese una oracion: ")
+# handlervocals=0
+# for words in sentence:
+#     match words:
+#         case "a":
+#             handlervocals+=1
+#         case "e":
+#             handlervocals+=1
+#         case "i":
+#             handlervocals+=1
+#         case "o":
+#             handlervocals+=1
+#         case "u":
+#             handlervocals+=1
+# print("la cantidad de vocales es:",handlervocals)
 ##
+opcion = 0
+while True:
+    print("""
+    Dime, ¿qué quieres hacer?
+
+    1) Sumar los dos números
+    2) Restar los dos números
+    3) Multiplicar los dos números
+    4) Cambiar los números elegidos
+    5) salir
+    """)
+    opcion = int(input("Elige una opción: "))
+    n1 = float(input("Introduce tu primer número: "))
+    n2 = float(input("Introduce tu segundo número: "))
+    if opcion == 1:
+        print(" ")
+        print("RESULTADO: La suma de", n1, "+", n2, "es igual a", n1 + n2)
+    elif opcion == 2:
+        print(" ")
+        print("RESULTADO: La resta de", n1, "-", n2, "es igual a", n1 - n2)
+    elif opcion == 3:
+        print(" ")
+        print("RESULTADO: El producto de", n1, "*", n2, "es igual a", n1 * n2)
+    elif opcion == 4:
+        n1 = float(input("Introduce tu primer número: "))
+        n2 = float(input("Introduce tu segundo número: "))
+    elif opcion == 5:
+        break
+    else:
+        print("Opción incorrecta")
+###
+mensajeOpciones="""
+================================
+selecciona una opcion
+ 1)suma
+ 2)resta
+ 3)divicion
+ 4)multiplicacion
+ 5)salir
+================================
+"""
+while True:
+    print(mensajeOpciones)
+    opcion=input("ingresa una opccion valida entre(1-5):")
+    num1=int(input("ingrese el primer numero"))
+    num2=int(input("ingrese el segundo numero"))
+    match opcion:
+        case "1":
+            print(f"la suma de {num1}+{num2}={num1+num2}")
+        case "2":
+            print(f"la resta de {num1}-{num2}={num1-num2}")
+        case "3":
+            print(f"la divicion de {num1}/{num2}={num1/num2}")
+        case "4":
+            print(f"la multiplicacion de {num1}*{num2}={num1*num2}")
+        case "5":
+            break
+        case _:
+            print("esta opcion no exixte")
+
+###
+def operaciones(num1,num2,operacion):
+    return
+mensajeOpciones="""
+================================
+selecciona una opcion
+ 1)suma
+ 2)resta
+ 3)divicion
+ 4)multiplicacion
+ 5)salir
+================================
+"""
+while True:
+    print(mensajeOpciones)
+    opcion=input("ingresa una opccion valida entre(1-5):")
+    num1=int(input("ingrese el primer numero"))
+    num2=int(input("ingrese el segundo numero"))
+    operaciones(num1,num2,opcion)
 
 
 
