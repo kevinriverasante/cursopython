@@ -55,19 +55,19 @@
 ##operadormatematico(numerouno,numerodos.numerodos,operacion)
 ##operadormatematico(4,5,"entre")
 ##por consola la suma de 4/5
-
-def operaciones(num1,num2,operacion):
-    if operacion=="suma":
-        operaciones="la suma de: ",num1,"+",num2, "es ",num1+num2
-    elif operacion=="resta":
-        operaciones="la resta de: ",num1,"-",num2, " es ",num1-num2
-    elif operacion=="multiplicacion":
-        operaciones="la multiplicacion de: ", num1, "*", num2, "es", num1*num2
-    elif operacion=="divicion":
-        operaciones="la divicion de: ", num1, "/", num2, "es", num1/num2
-    return operaciones
-print(operaciones(10,5,"divicion"))
-
+#=======================================
+# def operaciones(num1,num2,operacion):
+#     if operacion=="suma":
+#         operaciones="la suma de: ",num1,"+",num2, "es ",num1+num2
+#     elif operacion=="resta":
+#         operaciones="la resta de: ",num1,"-",num2, " es ",num1-num2
+#     elif operacion=="multiplicacion":
+#         operaciones="la multiplicacion de: ", num1, "*", num2, "es", num1*num2
+#     elif operacion=="divicion":
+#         operaciones="la divicion de: ", num1, "/", num2, "es", num1/num2
+#     return operaciones
+# print(operaciones(10,5,"divicion"))
+#================================
 
 # def mensaje(nombre,apellido,accion):
 #     if accion== "saludo":
@@ -78,12 +78,56 @@ print(operaciones(10,5,"divicion"))
 # print(mensaje("jose","alvarez","saludo"))
 
 ##vocales en una oracion
-sentence=input("enter sentence: ")
-vocales=["a","e","i","o","o"]
-def countvocal(oracion,vocal):
-    contador=0
-    for word in oracion:
-        if word in vocal:
-            contador+=1
-    return contador
-print(countvocal(sentence,vocales))
+#==================================
+# sentence=input("enter sentence: ")
+# vocales=["a","e","i","o","o"]
+# def countvocal(oracion,vocal):
+#     contador=0
+#     for word in oracion:
+#         if word in vocal:
+#             contador+=1
+#     return contador
+# print(countvocal(sentence,vocales))
+#=========================================
+#1 uetelizar la palabra reserva def
+#2. asisgnamos un nombre a la funcion--descriptivo
+#3 siempre tiene que recibir parametros
+ #()----no sirve parametros
+ #(nombre)----que una funcion esat recibiendo un parametro
+ ##(edad,nokbre)
+ #4 siemopre la funcion tiene que retornar un tipo de dato
+# def saludo(nombre):
+#     respuesta=f"hola como estas {nombre}"
+#     return respuesta
+#  ##como uso
+# arrayamigos=["ronal","claudio","diego","jose","mozar","kevin","lilian"]
+# for amigo in range(0,len(arrayamigos)):
+#     print(saludo(arrayamigos[amigo]))
+
+##crea una funcion que me retorne los n numeros fibonacci
+###
+# def fib(n):
+#     if n <2:
+#         return n
+#     return fib(n-1)+fib(n-2)
+# for x in range(20):
+#     print(fib(x))
+##crear una funcion que me retorne el factorial de un numero n
+#5=5*4*3*2*1
+#7=7*6*5*4*3*2*1
+# numero=int(input("numero: "))
+# factorial=1
+# if numero!=0:
+#     for i in range(1,numero+1):
+#         factorial=factorial*1
+# print("factorial: ",factorial)
+##crear una funcion que me diga si una palabra es palindromo
+#ada
+#ala
+#reconocer
+letra=input("ingresa la palabra: ")
+if (letra)==(letra)[::-1]:
+    print("es palindromo")
+else:
+    print("no es palindromo")
+
