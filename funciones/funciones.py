@@ -125,9 +125,24 @@
 #ada
 #ala
 #reconocer
-letra=input("ingresa la palabra: ")
-if (letra)==(letra)[::-1]:
-    print("es palindromo")
-else:
-    print("no es palindromo")
-
+# letra=input("ingresa la palabra: ")
+# if (letra)==(letra)[::-1]:
+#     print("es palindromo")
+# else:
+#     print("no es palindromo")
+###
+def operaciones(numero1,numero2,operador):
+    if operador=="suma":
+        total=numero1+numero2
+    if operador=="resta":
+        total=numero1-numero2
+    if operador=="multiplicacion":
+        total=numero1*numero2
+    if operador=="divicion":
+        total=numero1/numero2
+    return total
+##llamando la funcion
+respuesta=operaciones(10,8,"suma")
+respuesta2=operaciones(100,20,"resta")
+print(f"la suma es {respuesta}")
+print(f"la suma es {respuesta2}")
