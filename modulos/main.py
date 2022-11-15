@@ -1,5 +1,6 @@
 ##llamando la funcion
 ##aqui en main ejecutare mis funciones
+##from funciones import operaciones
 import funciones as op
 respuesta=op.operaciones(10,8,"suma")
 respuesta2=op.operaciones(100,20,"resta")
