@@ -21,9 +21,14 @@
 #        list.append(i)
 #print(list)
 ##vocales
-vocalesuno=["a","e"]
-vocalesdos=["i","o","u"]
-vocalesuno.extend(vocalesdos)
-vocalesuno[3]="OO"
-vocalesuno.remove("u")
-print(vocalesuno)
+
+# vocalesuno=["a","e"]
+# vocalesdos=["i","o","u"]
+# vocalesuno.extend(vocalesdos)
+# vocalesuno[3]="OO"
+# vocalesuno.remove("u")
+# print(vocalesuno)
+import ejercicio as op
+print(op.datos())
+print(op.texto())
+print(op.numpar())
