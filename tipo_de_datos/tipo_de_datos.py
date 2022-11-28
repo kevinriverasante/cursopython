@@ -16,10 +16,10 @@
 
 #DATO DE TIPO ARRAY
  #todo lo que esta dentro de un corchete([])
- array=[12]
+ #array=[12]
 
 #DATO DE TIPO OBJETO
  #todo lo que esta dentro de  una llave {}
- objeto{nombre="kevin"
- edad=20
- asistencia=true}
+ #objeto{nombre="kevin"
+ #edad=20
+ #asistencia=true}
