@@ -29,7 +29,6 @@ print("la plabra mas larga es:"
       + str(max))
 #ecribe un programa que reciba una cadena de carateres y devuelva un diccionario con cada palabra que contiene.
 def creador_dict(cadena):
-  '''Recibe una cadena de caracteres y regresa un diccionario con las palabras (keys) y conteo (value)'''
   lista_1= cadena.split()
   dict_1={}
   for i in lista_1:
@@ -40,7 +39,6 @@ def creador_dict(cadena):
   return dict_1
 
 def contador_dict(dictionario):
-  '''Recibe un diccionario y regresa una tupla: la palabra mas repetida y cuantas veces aparece'''
   palabra_frecuente= ''
   cantidad=0
   for keys,values in dictionario.items():
